@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Chad </title>
+		<link href="/Styles/reset.css" type="text/css" rel="stylesheet" />
+		<link href="/Styles/base.css" type="text/css" rel="stylesheet" />
+		<link href="/Styles/home.css" type="text/css" rel="stylesheet" />
+		<link href="/Styles/Modules/nav.css" type="text/css" rel="stylesheet" />
+		<link href="/Styles/Modules/eyeball.css" type="text/css" rel="stylesheet" />
+		<link href="/Styles/projects.css" type="text/css" rel="stylesheet" />
+		<link href="/Styles/about.css" type="text/css" rel="stylesheet" />
+		<link href="/Vendor/style.css" type="text/css" rel="stylesheet" />
+		<link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+		<link href="/Styles/dropdown.css" type="text/css" rel="stylesheet" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!--handlebars template for adding projects-->
+		<script id="project-template" type="text/x-handlebars-template">
+			<figure class ="project">
+				<a class="picture-link" href="{{projectLink}}">
+					<img class="project-picture" src="{{projectPicture}}" title="Project Screenshot">
+				</a>
+				<p class="project-par">{{projectTitle}}</p>
+				<p> <time class="project-date">{{projectDate}}</time> </p>
+			</figure>
+		</script>
+	</head>
+
+	<body>
+		<div class="menu-cont">
+			<div class="menu">
+        <a class="menu-item" href="/">Beginning</a>
+        <a class="menu-item" href="/projects">Projects</a>
+        <a class="menu-item" href="/about">About</a>
+      </div>
+			<div class="menu-icon">
+				<div class="top-bar bar">
+				</div>
+				<div class="mid-bar bar">
+				</div>
+				<div class="bot-bar bar">
+				</div>
+			</div>
+		</div>
+
+
+		<section class="home">
+			<div class="initial-page">
+				<div class="background"> </div>
+				<div class="intro-wrapper">
+					<p class="intro-hi"> Hi there. </p>
+					<p class="intro"> I'm Chad Oehlschlaeger-Browne, and I'm a web developer.</p>
+				</div>
+				<div class="scroll-wrap">
+					<img src="/Assets/mouse.gif">
+					<p class="scroll-down"> Scroll down to see more. </p>
+				</div>
+				<div class="eyeHolder">
+					<div class="eyeLid">
+						<div class="eyeball">
+							<div class="iris">
+								<div class="irisBG">
+								</div>
+								<div class="pupil">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="project-grid">
+				<div class="project-image krgr-link">
+					<a href="http://krgrfamily.com"> VIEW PROJECT	</a>
+				</div>
+				<div class="project-image otp-link">
+					<a href="https://onetrickpony.herokuapp.com/"> VIEW PROJECT	</a>
+				</div>
+				<div class="project-image bth-link">
+					<a href="https://balltooohard.herokuapp.com/"> VIEW PROJECT	</a>
+				</div>
+				<div class="project-image youchoose-link">
+					<a href=""> VIEW PROJECT </a>
+				</div>
+			</div>
+
+
+			<div class="project krgr">
+				<img src="/Assets/krgrtall.jpg">
+				<div class="two-thirds-div">
+					<img class="computer-screen" src="/Assets/computerscreen.png">
+				</div>
+				<div class="one-third-div">
+					<span class="diamond-des">Krgr is a family website which includes a family tree, a book viewer, and photo albums.</span>
+				</div>
+				<a href="" class="krgr-tree icon-diamonds"></a>
+				<a href="" class="krgr-books icon-diamonds"></a>
+				<a href="" class="krgr-albums icon-diamonds"></a>
+			</div>
+			<div class="project otp">
+				<img src="/Assets/otptall.jpg">
+				<div class="two-thirds-div">
+					<img class="computer-screen" src="/Assets/computerscreen.png">
+				</div>
+				<div class="one-third-div">
+					<span class="diamond-des">One Trick Pony is a League of Legends fansite which allows the user to look up a champion and find the top ten players of that champion and their item builds. Unfortunately it is down due to not having a Riot API key.</span>
+				</div>
+				<a href="" class="otp-animation icon-diamonds"></a>
+				<a href="" class="otp-riotapi icon-diamonds"></a>
+				<a href="" class="otp-thumbnails icon-diamonds"></a>
+			</div>
+			<div class="project bth">
+				<img src="/Assets/bthscreenshot.jpg">
+				<div class="two-thirds-div">
+					<img class="computer-screen" src="/Assets/computerscreen.png">
+				</div>
+				<div class="one-third-div">
+					<span class="diamond-des">Ball too hard is a website which simply displays videos teaching the fundamentals of the game of basketball.</span>
+				</div>
+				<a href="" class="bth-neon icon-diamonds"></a>
+				<a href="" class="bth-videos icon-diamonds"></a>
+			</div>
+			<div class="project youchoose">
+				<img src="/Assets/youChooseScreenshot.jpg">
+				<div class="two-thirds-div">
+					<img class="computer-screen" src="/Assets/computerscreen.png">
+				</div>
+				<div class="one-third-div">
+					<span class="diamond-des">YouChoose allows the user to see the top 12 videos on Youtube based on a search query. The user can view more videos by removing the ones shown.</span>
+				</div>
+				<a href="" class="youchoose-dragging icon-diamonds"></a>
+				<a href="" class="youchoose-search icon-diamonds"></a>
+				<a href="" class="youchoose-customizability icon-diamonds"></a>
+			</div>
+			<div class="about">
+				<span> About Me </span>
+				<div class="about-par">
+					<p> For as long as I ca remember I have been enthralled with the ability to create through code. It is magical the ways people have innovated on a computer screen. I am also passionate about the internet and its ability to
+							share information between parties in the most efficient of ways. I've been off and on coding since the age of 10, but in the last year I have decided to pursue this outlet as a job. I would love to bring my skills to your
+							company and continue to improve them while doing quality work.
+					</p>
+					<p> Libraries/API's I've worked with include: Jquery, D3, Bluebird, Express, Mongodb, Jquery-ui, nodemailer, Node, the Google api, the Youtube api, and the Riot Games api</p>
+					<p>I have build websites based upon these concepts: MVC, Client side routing using Page.js, Youtube API, Responsive Design, Single Page Applications, Jquery, SMACSS organization, CSS animations, Jquery Animations, Github, Local Storage, Working with JSON, Some Templating with Handlebars, Some SQL, Event Handling, AJAX calls.</p>
+					<p>Thanks for taking the time to take a look at my website. Please contact me by email at chadnobrowne@gmail.com or by phone at (206) 679-0868. </p>
+				</div>
+			</div>
+		</section>
+		<!--SCRIPTS-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+		<script src="/Vendor/Scripts/page.js"></script>
+		<script src="/Data/projectData.js"></script>
+		<script src="/Scripts/scroll.js"></script>
+		<script src="/Scripts/projects.js"></script>
+		<script src="/Scripts/eyeSize.js"></script>
+		<script src="/Scripts/eyePlacement.js"></script>
+		<script src="/Scripts/eyeball.js"></script>
+		<script src="/Scripts/dropdown.js"></script>
+		<script src="/Scripts/homeController.js"></script>
+		<script src="/Scripts/sectionController.js"></script>
+		<script src="/Scripts/modalController.js"></script>
+		<script src="/Scripts/routes.js"></script>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+var modalData = {
+  "youChooseDragging": {
+    "pictureURL": "/Assets/youChooseDragging.jpg",
+    "pictureDescription": "I wanted to create a unique but intutive experience for the user. To do this, I worked with the Jquery-ui in order to obtain the ability to drag elements. I then used mouse movement events and drag events to obtain the position of the mouse and remove videos by having the user drag them out of the grid."
+  },
+  "youChooseSearch": {
+    "pictureURL": "/Assets/youChooseScreenshot.jpg",
+    "pictureDescription": "We spent time learning how to work with the Youtube API in order to bring a simple and streamlined video viewing experience to the user. We learned how to filter results by almost any criteria whether through the API or otherwise. It was a challenging experience to get past CORS issues and to work with authorization tokens."
+  },
+  "youChooseCustomizability": {
+    "pictureURL": "/Assets/youChooseCustomizability.jpg",
+    "pictureDescription": "Through using local storage, we wanted to git the user greater control over the customizability of the website. The user, in addition to choosing which videos are displayed, can also choose a background for the website from pictures on their computer and can also decide to block the videos of specified YouTube accounts."
+  },
+  "streetsModal": {
+    "pictureURL": "/Assets/streetsModal.jpg",
+    "pictureDescription": "I was inspired to create my own version of a modal window by seeing it skillfully done on a music artists website. I think that modal windows are a wonderful way to highlight your creations in the cleanest of ways."
+  },
+  "streetsNav": {
+    "pictureURL": "/Assets/streetsNav.jpg",
+    "pictureDescription": "I decided to try and create my own navigation bar here. Upon further analysis, I wish that I would have made it clearer to the user that this was the navigation, and I would also improve upon it by letting the user know what they were navigating to by clicking. I think text to the left of the bar would have been sufficient."
+  },
+  "streetsSlider": {
+    "pictureURL": "/Assets/streetsSlider.jpg",
+    "pictureDescription": "I wanted to create something different of the final page of this website and decided to make my a slider for videos. I think this worked very well, and the only thing I would add to it is a list of potential videos to play on the side. This way a user could easily navigate between videos and have some idea of what they were about without clicking on them."
+  },
+  "aimBlasterEvents": {
+    "pictureURL": "/Assets/aimBlasterEvents.jpg",
+    "pictureDescription": "aimBlaster taught me some new concepts when I created it. I learned about event delegation onto dynamically created elements through clicking on targets. I also learned about setTimeout, setInterval, and clearInterval. It was a very interesting experience taking a flash game that someone else had created and deciding to make a javascript/css version. I am very sure that my creation process went very differently than the other person's."
+  },
+  "aimBlasterAnimation": {
+    "pictureURL": "/Assets/aimBlasterAnimation.jpg",
+    "pictureDescription": "aimBlaster also demonstrates some of my skill with creating animations. It was a successful foray into animating solely using jquery and setTimeouts. I created targets that would grow and shrink based on how long they existed. By building off some of the concepts learned, I created the eyeball you see on the homepage of this site."
+  },
+  "taskMasterLogin": {
+    "pictureURL": "/Assets/taskMasterLogin.jpg",
+    "pictureDescription": "task master stuff for later?"
+  }
+}
