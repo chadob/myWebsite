@@ -4,13 +4,14 @@ $(document).ready(function(){
   $('body').css('height', (winHeight * 6) + 'px');
 
   function hideAll(shownEle) {
-    $('.background').css('opacity', '0');
     $('.initial-page').css('opacity', '0');
     $('.project-grid').css('opacity', '0');
     $('.project').css('opacity', '0');
+    $('.about').css('opacity', '0');
       $('.initial-page').not(shownEle).hide();
       $('.project-grid').not(shownEle).hide();
       $('.project').not(shownEle).hide();
+      $('.about').not(shownEle).hide();
   }
 
 

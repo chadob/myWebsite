@@ -2,4 +2,40 @@
 width: 100%;
 height: 100%;
 background: #17a16e;
+top: 0px;
+position: fixed;
+}
+.thank-you {
+  font-size: 36px;
+  margin-top: 50px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+}
+.libraries {
+  margin-top: 50px;
+  font-size: 20px;
+  width: 40%;
+  margin-left: 5%;
+}
+.skills {
+  margin-top: 50px;
+  font-size: 20px;
+  width: 40%;
+  margin-left: 5%;
+}
+.bio {
+  margin-top: 50px;
+  font-size: 20px;
+  width: 40%;
+  left: 55%;
+  position: fixed;
+}
+.contact-me {
+  font-size: 20px;
+  bottom: 0px;
+  position: fixed;
+  left: calc(50% - 382.8px);
+  text-align: center;
 }
