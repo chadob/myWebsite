@@ -18,7 +18,7 @@
 }
 .eyeHolder {
   opacity: 1;
-  position: fixed;
+  position: absolute;
   height: 120px;
   width: 150px;
   left: calc(50% - 75px);

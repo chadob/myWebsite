@@ -1,60 +1,51 @@
 $(document).ready(function(){
   var winHeight = $(document).height();
-  var prevScreenPos = .1;
-  $('body').css('height', (winHeight * 6) + 'px');
+  var prevScreenPos = .1425;
+  // $('body').css('height', (winHeight * 6) + 'px');
 
   function hideAll(shownEle) {
-    $('.initial-page').css('opacity', '0');
-    $('.project-grid').css('opacity', '0');
     $('.project').css('opacity', '0');
-    $('.about').css('opacity', '0');
-      $('.initial-page').not(shownEle).hide();
-      $('.project-grid').not(shownEle).hide();
-      $('.project').not(shownEle).hide();
-      $('.about').not(shownEle).hide();
+    $('.project').not(shownEle).hide();
+    $('.about').hide();
   }
-
+  function lockProjects() {
+    $('.projects').css('position', 'fixed');
+  }
 
   $(document).on('scroll', function() {
     var screenPos = $(document).scrollTop() / $('body').height();
     console.log(screenPos);
+    console.log($(document).scrollTop());
+    console.log($('body').height());
     switch(true) {
-      case screenPos < .1:
-        if (prevScreenPos === .1) {
+      case screenPos < .1425:
+        if (prevScreenPos === .1425) {
         } else {
-          prevScreenPos = .1;
-          setTimeout(function() {
-            hideAll('.initial-page');
-            $('.initial-page').show();
-            $('.initial-page').css('z-index', 99);
-            $('.background').css('opacity', '1');
-            $('.initial-page').css('opacity', '1');
-          }, 500);
-          $('.home').css('background', '#242527');
+          prevScreenPos = .1425;
+          $('.projects').css('position', 'relative');
+          hideAll();
           $('.background').css('background-image', 'url("../Assets/profileBlue.jpg")');
           $('.background').css('background-repeat', 'no-repeat');
           $('.background').css('background-position', 'top');
           $('.background').css('background-size', 'cover');
         }
         break;
-      case screenPos < .2:
-        if (prevScreenPos === .2) {
+      case screenPos < .285 :
+        if (prevScreenPos === .285) {
         } else {
-          prevScreenPos = .2;
-          setTimeout(function() {
-            hideAll('.project-grid');
-            $('.project-grid').show();
-            $('.project-grid').css('z-index', 99);
-            $('.project-grid').css('opacity', '1');
-          }, 500);
+          prevScreenPos = .285;
+          hideAll();
           $('.background').css('background', '#242527');
-          $('.about-text').css('opacity', '1');
+          $('.krgr').show();
+          $('.krgr').css('opacity', '1');
+          $('.projects').css('position', 'relative');
         }
         break;
-      case screenPos < .3:
-        if (prevScreenPos === .3) {
+      case screenPos < .4275:
+        if (prevScreenPos === .4275) {
         } else {
-          prevScreenPos = .3;
+          prevScreenPos = .4275;
+          lockProjects();
           setTimeout(function() {
             hideAll('.krgr');
             $('.krgr').show();
@@ -64,10 +55,11 @@ $(document).ready(function(){
           $('.background').css('background', '#242527');
         }
         break;
-      case screenPos < .4:
-        if (prevScreenPos === .4) {
+      case screenPos < .5700:
+        if (prevScreenPos === .5700) {
         } else {
-          prevScreenPos = .4;
+          prevScreenPos = .5700;
+          lockProjects();
           setTimeout(function() {
             hideAll('.otp');
             $('.otp').show();
@@ -78,10 +70,11 @@ $(document).ready(function(){
           $('.about-text').css('opacity', '1');
         }
         break;
-      case screenPos < .5:
-        if (prevScreenPos === .5) {
+      case screenPos < .7125:
+        if (prevScreenPos === .7125) {
         } else {
-          prevScreenPos = .5;
+          prevScreenPos = .7125;
+          lockProjects();
           setTimeout(function() {
             hideAll('.bth');
             $('.bth').show();
@@ -92,10 +85,12 @@ $(document).ready(function(){
           $('.about-text').css('opacity', '1');
         }
         break;
-      case screenPos < .6:
-        if (prevScreenPos === .6) {
+      case screenPos < .845:
+        if (prevScreenPos === .845) {
         } else {
-          prevScreenPos = .6;
+          prevScreenPos = .845;
+          $('.projects').css('position', 'relative');
+          $('.project').css('position', 'absolute');
           setTimeout(function() {
             hideAll('.youchoose');
             $('.youchoose').show();
@@ -106,19 +101,10 @@ $(document).ready(function(){
           $('.about-text').css('opacity', '1');
         }
         break;
-      case screenPos < .7:
-        if (prevScreenPos === .7) {
-        } else {
-          prevScreenPos = .7;
-          setTimeout(function() {
-            hideAll('.about');
-            $('.about').show();
-            $('.about').css('z-index', 99);
-            $('.about').css('opacity', '1');
-          }, 500);
-          $('.background').css('background', '#17a16e');
-        }
-        break;
+      case screenPos < .9875:
+      $('.project').show();
+      $('.project').css('position', 'relative');
+        $('.projects').css('position', 'relative');
     }
   });
 });
