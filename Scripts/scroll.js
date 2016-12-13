@@ -28,6 +28,9 @@ $(document).ready(function(){
           $('.background').css('background-repeat', 'no-repeat');
           $('.background').css('background-position', 'top');
           $('.background').css('background-size', 'cover');
+          $('.krgr').show();
+          $('.krgr').css('opacity', '1');
+          $('.projects').css('position', 'relative');
         }
         break;
       case screenPos < .285 :
@@ -85,15 +88,17 @@ $(document).ready(function(){
           $('.about-text').css('opacity', '1');
         }
         break;
-      case screenPos < .845:
-        if (prevScreenPos === .845) {
+      case screenPos < .8:
+        if (prevScreenPos === .8) {
         } else {
-          prevScreenPos = .845;
+          prevScreenPos = .8;
           $('.projects').css('position', 'relative');
-          $('.project').css('position', 'absolute');
           setTimeout(function() {
-            hideAll('.youchoose');
+            $('.krgr').show();
+            $('.otp').show();
+            $('.bth').show();
             $('.youchoose').show();
+            $('.about').show();
             $('.youchoose').css('z-index', 99);
             $('.youchoose').css('opacity', '1');
           }, 500);
@@ -102,6 +107,7 @@ $(document).ready(function(){
         }
         break;
       case screenPos < .9875:
+      $('.about').show();
       $('.project').show();
       $('.project').css('position', 'relative');
         $('.projects').css('position', 'relative');
