@@ -38,7 +38,7 @@
   font-size: 36px;
 }
 .intro-wrapper p:first-of-type {
-  font-size: 56px;
+  font-size: 128px;
 }
 .contact-intro {
   opacity: 1;
@@ -87,4 +87,11 @@
 .scroll-wrap p {
   font-size: 18px;
   line-height: 150%;
+}
+.hidden {
+  display: none;
+}
+
+.visuallyhidden {
+  opacity: 0;
 }

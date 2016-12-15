@@ -8,35 +8,40 @@ position: relative;
 .about p {
   display: inline-block;
 }
-.thank-you {
+.about h2 {
   font-size: 36px;
+  margin-left: 50%;
+  margin-top: 40px;
+}
+.thank-you {
+  width: 100%;
   margin-top: 50px;
+  font-size: 36px;
   display: flex;
   align-self: center;
   justify-content: center;
   text-align: center;
 }
 .libraries {
-  margin-top: 50px;
   font-size: 20px;
-  width: 40%;
+  width: 45%;
   margin-left: 5%;
 }
 .skills {
+  font-size: 20px;
+  width: 45%;
+  margin-left: 50%;
+}
+.bio {
+  float: left;
   margin-top: 50px;
   font-size: 20px;
   width: 40%;
   margin-left: 5%;
-}
-.bio {
-  margin-top: 50px;
-  font-size: 20px;
-  width: 40%;
-  left: 55%;
 }
 .contact-me {
   font-size: 20px;
   bottom: 0px;
-  left: calc(50% - 382.8px);
-  text-align: center;
+  margin-left: 50%;
+  margin-top: 40px;
 }
