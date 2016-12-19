@@ -38,7 +38,8 @@
   font-size: 36px;
 }
 .intro-wrapper p:first-of-type {
-  font-size: 128px;
+  font-size: 96px;
+  font-family: "adamcgpro";
 }
 .contact-intro {
   opacity: 1;

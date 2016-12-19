@@ -1,0 +1,23 @@
+.scroll-divs {
+  position: absolute;
+  height: 700vh;
+  width: 100%;
+  visibility: hidden;
+}
+.scroll {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+}
+.scroll-home {
+  top: 0px;
+}
+.scroll-links {
+  top: 100vh;
+}
+.scroll-projects {
+  top: 200vh;
+}
+.scroll-about {
+  top: 600vh;
+}
