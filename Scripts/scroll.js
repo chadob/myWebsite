@@ -93,7 +93,6 @@ $(document).ready(function(){
           prevScreenPos = .8;
           $('.projects').css('position', 'relative');
           $('.project').not('.youchoose').removeClass('hidden');
-          $('.project').not('.youchoose').removeClass('hidden');
           $('.project').not('.youchoose').removeClass('visually-hidden');
           if ($('.youchoose').hasClass('hidden')) {
             $('.youchoose').css('z-index', 99);
@@ -114,9 +113,10 @@ $(document).ready(function(){
         break;
       case screenPos < .9875:
       $('.about').show();
-      $('.project').show();
+      $('.project').removeClass('hidden');
+      $('.project').removeClass('visually-hidden');
       $('.project').css('position', 'relative');
-        $('.projects').css('position', 'relative');
+      $('.projects').css('position', 'relative');
     }
   });
 });
