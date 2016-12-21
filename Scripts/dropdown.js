@@ -5,6 +5,7 @@ $('.menu-cont').on('click', function() {
   $('.mid-bar').toggleClass('top-bar-active');
   $('.bot-bar').toggleClass('bot-bar-active');
   $('.menu').toggleClass('menu-active');
+  $('.menu-background').toggleClass('menu-background-active');
   $('.menu-cont').addClass('active');
   $('.menu-item').toggleClass('menu-item-active');
   console.log('active');

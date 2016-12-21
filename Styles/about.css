@@ -4,6 +4,7 @@ min-height: 100vh;
 background: #17a16e;
 bottom: 0px;
 position: relative;
+display: none;
 }
 .about p {
   display: inline-block;
@@ -13,6 +14,7 @@ position: relative;
   margin-left: 50%;
   margin-top: 40px;
   font-family: "adamcgpro";
+  color: white;
 }
 .thank-you {
   width: 100%;
@@ -31,7 +33,8 @@ position: relative;
 .skills {
   font-size: 20px;
   width: 45%;
-  margin-left: 50%;
+  margin-right: 5%;
+  float: right;
 }
 .bio {
   float: left;

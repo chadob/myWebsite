@@ -1,0 +1,7 @@
+Todo:
+1. Finish routing
+2. Add backdrop to menu
+3. Change color of youchoose
+4. Change color of h2
+5. Add picture
+6. Add popup describing how to use projects

@@ -21,15 +21,34 @@
   margin-left: -10px;
   margin-top: -10px;
 }
+.menu-background {
+  opacity: 0;
+  width: 180px;
+  height: 210px;
+  margin-left: -10px;
+  margin-top: -50px;
+  position: absolute;
+  background: black;
+  display: none;
+  z-index: 99;
+}
+.menu-background-active {
+  -webkit-transition: top .5s, left .5s, width .5s, height .5s, opacity .5s; /* Safari */
+  transition: top .5s, left .5s, width .5s, height .5s, opacity .5s;
+  opacity: .7;
+  display: block;
+}
 .menu-item {
   text-decoration: none;
-  /*font-family: "adamcgpro";*/
+  font-family: "adamcgpro";
   color: white;
   margin-left: 10px;
   margin-right: 20px;
   margin-bottom: 10px;
   opacity: 0;
   display: none;
+  z-index: 100;
+  position: relative;
 }
 .menu-item:hover {
   text-decoration: underline;
