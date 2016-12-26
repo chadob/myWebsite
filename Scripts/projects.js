@@ -13,3 +13,6 @@ $('.project-image').on('mouseover', function(e) {
   $('.project-image').css('width', '22%');
   $(this).css('width', '34%');
 });
+$('.icon-diamonds').on('click', function(e) {
+  e.preventDefault();
+});

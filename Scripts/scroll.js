@@ -2,7 +2,11 @@ $(document).ready(function(){
   var winHeight = $(document).height();
   var prevScreenPos = .1425;
   // $('body').css('height', (winHeight * 6) + 'px');
-
+  var popUpSeen = false;
+  $('.pop-up').on('click', function() {
+    popUpSeen = true;
+    $('.pop-up').hide();
+  });
   function hideAbout(shownEle) {
     $('.about').hide();
   }
@@ -65,6 +69,12 @@ $(document).ready(function(){
       case screenPos < .4275:
         if (prevScreenPos === .4275) {
         } else {
+          if (popUpSeen === false) {
+            $('.pop-up').show();
+              setTimeout(function () {
+                $('.pop-up').css('opacity', '1');
+              }, 20);
+          }
           prevScreenPos = .4275;
           lockProjects();
           detectHidden('.krgr');

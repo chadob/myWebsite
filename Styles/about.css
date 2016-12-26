@@ -45,7 +45,9 @@ display: none;
 }
 .contact-me {
   font-size: 20px;
-  bottom: 0px;
-  margin-left: 50%;
-  margin-top: 40px;
+  bottom: 30px;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  text-align: center;
 }

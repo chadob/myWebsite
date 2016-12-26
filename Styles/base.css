@@ -6,6 +6,7 @@
 body {
 	font-family: 'Vollkorn', serif;
 	width: 100%;
+  min-width: 1000px;
 	height: 700vh;
 	-webkit-transition: opacity .5s ease-in;
 	-moz-transition: opacity .5s ease-in;
