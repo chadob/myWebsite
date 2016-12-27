@@ -3,6 +3,11 @@
   src: url("../Assets/chunkfive.woff") format("opentype");
 	font-weight: bold;
 }
+html {
+  min-width: 1000px;
+  margin: 0;
+  padding: 0;
+}
 body {
 	font-family: 'Vollkorn', serif;
 	width: 100%;
@@ -13,6 +18,8 @@ body {
 	-o-transition: opacity .5s ease-in;
 	-ms-transition: opacity .5s ease-in;
 	transition: opacity .5s ease-in;
+  margin: 0;
+  padding: 0;
 }
 a {
 	text-decoration: none;

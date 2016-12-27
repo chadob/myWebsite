@@ -9,31 +9,41 @@ display: none;
 .about p {
   display: inline-block;
 }
+.about-par {
+  min-height: 100vh;
+}
+.about-right {
+  width: 45%;
+  margin-left: 5%;
+  display: inline-block;
+  position: absolute;
+  top: calc(50% + 40px);
+  transform: translateY(-50%);
+}
 .about h2 {
-  font-size: 36px;
-  margin-left: 50%;
+  font-size: 30px;
   margin-top: 40px;
   font-family: "adamcgpro";
   color: white;
 }
-.thank-you {
+.about h2:first-of-type {
+  margin-top: 0px;
+}
+.contact-me {
   width: 100%;
   margin-top: 50px;
-  font-size: 36px;
+  font-size: 30px;
   display: flex;
   align-self: center;
   justify-content: center;
   text-align: center;
+  color: white;
 }
 .libraries {
   font-size: 20px;
-  width: 45%;
-  margin-left: 5%;
 }
 .skills {
   font-size: 20px;
-  width: 45%;
-  margin-right: 5%;
   float: right;
 }
 .bio {
@@ -42,12 +52,4 @@ display: none;
   font-size: 20px;
   width: 40%;
   margin-left: 5%;
-}
-.contact-me {
-  font-size: 20px;
-  bottom: 30px;
-  position: absolute;
-  width: 100%;
-  left: 0px;
-  text-align: center;
 }

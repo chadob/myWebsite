@@ -12,6 +12,13 @@ $(document).ready(function(){
   }
   function lockProjects() {
     $('.projects').css('position', 'fixed');
+    var pageWidth = $('body').width();
+    $('.projects').css('width', pageWidth + 'px');
+    $(window).on('resize', function() {
+      console.log('hi');
+      pageWidth = $('body').width();
+      $('.projects').css('width', pageWidth + 'px');
+    });
   }
   function detectHidden(ele) {
     console.log('ran');
@@ -44,6 +51,7 @@ $(document).ready(function(){
       case screenPos < .1425:
         if (prevScreenPos === .1425) {
         } else {
+          $('.menu span').text('Home');
           prevScreenPos = .1425;
           $('.projects').css('position', 'relative');
           hideAbout();
@@ -69,12 +77,12 @@ $(document).ready(function(){
       case screenPos < .4275:
         if (prevScreenPos === .4275) {
         } else {
-          if (popUpSeen === false) {
-            $('.pop-up').show();
-              setTimeout(function () {
-                $('.pop-up').css('opacity', '1');
-              }, 20);
-          }
+          // if (popUpSeen === false) {
+          //   $('.pop-up').show();
+          //     setTimeout(function () {
+          //       $('.pop-up').css('opacity', '1');
+          //     }, 20);
+          // }
           prevScreenPos = .4275;
           lockProjects();
           detectHidden('.krgr');
