@@ -10,6 +10,10 @@ $(document).ready(function(){
   function hideAbout(shownEle) {
     $('.about').hide();
   }
+  $(window).on('resize', function() {
+    aboutLeftWidth = $('.about-left').width();
+    $('.about-right').css('width', 'calc(100% - ' + (aboutLeftWidth + 50) + 'px)');
+  });
   function lockProjects() {
     $('.projects').css('position', 'fixed');
     var pageWidth = $('body').width();
@@ -136,6 +140,8 @@ $(document).ready(function(){
       case screenPos < .9875:
       $('.background').css('background', '#7f0b0b');
       $('.about').show();
+      var aboutLeftWidth = $('.about-left').width();
+      $('.about-right').css('width', 'calc(100% - ' + (aboutLeftWidth + 50) + 'px)');
       $('.project').removeClass('hidden');
       $('.project').removeClass('visually-hidden');
       $('.projects').css('position', 'relative');

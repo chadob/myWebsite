@@ -1,35 +1,21 @@
 .about {
 width: 100%;
 min-height: 100vh;
-background: #17a16e;
+background: #bdcfdd;
 bottom: 0px;
 position: relative;
 display: none;
+color: black;
 }
 .about p {
   display: inline-block;
+  color: black;
 }
 .about-par {
   min-height: 100vh;
 }
-.about-right {
-  width: 45%;
-  margin-left: 5%;
-  display: inline-block;
-  position: absolute;
-  top: calc(50% + 40px);
-  transform: translateY(-50%);
-}
-.about h2 {
-  font-size: 30px;
-  margin-top: 40px;
-  font-family: "adamcgpro";
-  color: white;
-}
-.about h2:first-of-type {
-  margin-top: 0px;
-}
 .contact-me {
+  position: absolute;
   width: 100%;
   margin-top: 50px;
   font-size: 30px;
@@ -37,19 +23,41 @@ display: none;
   align-self: center;
   justify-content: center;
   text-align: center;
-  color: white;
+  color: black;
+}
+.about-left {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+}
+.about img {
+  height: 100vh;
+}
+.bio {
+  margin-top: 50px;
+  font-size: 20px;
+}
+.about-right {
+  /*width: 45%;*/
+  margin-left: 50px;
+  vertical-align: top;
+  /*display: inline-block;
+  position: relative;*/
+}
+.about h2 {
+  font-size: 30px;
+  margin-top: 40px;
+  font-family: "adamcgpro";
+  color: black;
+}
+.about h2:first-of-type {
+  margin-top: 0px;
 }
 .libraries {
   font-size: 20px;
+  width: 100%;
 }
 .skills {
   font-size: 20px;
   float: right;
-}
-.bio {
-  float: left;
-  margin-top: 50px;
-  font-size: 20px;
-  width: 40%;
-  margin-left: 5%;
 }
