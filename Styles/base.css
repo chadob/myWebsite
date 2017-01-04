@@ -5,6 +5,7 @@
 }
 html {
   min-width: 1000px;
+  height: 700vh;
   margin: 0;
   padding: 0;
 }
@@ -32,7 +33,7 @@ h1 {
 	font-size: 3em;
 }
 p {
-	color: white;
+	color: black;
   font-size: 30px;
 	line-height: 200%;
 }

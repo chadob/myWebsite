@@ -62,6 +62,18 @@
   top: 0px;
   position: relative;
 }
+.krgr {
+  background:#bdcfdd;
+}
+.otp {
+  background:#bdcfdd;
+}
+.bth {
+  background:#bdcfdd;
+}
+.youchoose {
+  background:#bdcfdd;
+}
 .visually-hidden {
   opacity: 0;
 }
@@ -93,8 +105,8 @@
   text-align: center;
 }
 .diamond-des {
-  font-size: 22px;
-  color: white;
+  font-size: 20px;
+  color: black;
 }
 .computer-screen {
   width: 100%;

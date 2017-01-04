@@ -1,11 +1,12 @@
 .about {
 width: 100%;
-min-height: 100vh;
+height: 100vh;
 background: #bdcfdd;
 bottom: 0px;
 position: relative;
 display: none;
 color: black;
+overflow-y: hidden;
 }
 .about p {
   display: inline-block;
@@ -28,14 +29,13 @@ color: black;
   height: 100vh;
 }
 .bio {
-  margin-top: 50px;
   font-size: 20px;
 }
 .about-right {
-  vertical-align: center;
+  width: 420px;
   max-width: 600px;
-  float: right;
-  margin: 0 auto;
+  float: left;
+  margin-left: 25px;
 }
 .about h2 {
   font-size: 30px;

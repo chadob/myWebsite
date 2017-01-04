@@ -8,5 +8,4 @@ $('.menu-cont').on('click', function() {
   $('.menu-background').toggleClass('menu-background-active');
   $('.menu-cont').addClass('active');
   $('.menu-item').toggleClass('menu-item-active');
-  console.log('active');
 });
