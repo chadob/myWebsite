@@ -4,6 +4,9 @@ $(function() {
 
 	//code for eye following cursor
 	$(document).mousemove(function(e) {
+		if ($(window).width() >= 440) {
+			$('.eyeHolder').show();
+	  }
 		winHeight = $(window).height(), eyeHeight = 120, mouseX, mouseY, eyeX = $(window).width() / 2, eyeY = winHeight - 125, angle = 0, heightWidthSetter, xRotate, yRotate, pupilSize = 40, irisSize=80;
 
 	  mouseX = e.pageX;

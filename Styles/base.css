@@ -4,24 +4,26 @@
 	font-weight: bold;
 }
 html {
-  min-width: 1000px;
-  height: 700vh;
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 body {
-	font-family: 'Vollkorn', serif;
-	width: 100%;
-  min-width: 1000px;
-	height: 700vh;
-	-webkit-transition: opacity .5s ease-in;
-	-moz-transition: opacity .5s ease-in;
-	-o-transition: opacity .5s ease-in;
-	-ms-transition: opacity .5s ease-in;
-	transition: opacity .5s ease-in;
-  margin: 0;
-  padding: 0;
+  height: 100%;
+  width: 100%;
 }
+@media (min-width: 1200) {
+  body {
+    font-family: 'Vollkorn', serif;
+    min-width: 300px;
+    width: 100%;
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 a {
 	text-decoration: none;
 	color: white;

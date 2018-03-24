@@ -1,45 +1,112 @@
+@media (max-width: 1200px) {
+  .project-grid {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 1;
+    -webkit-transition: opacity .5s ease-in;
+    -moz-transition: opacity .5s ease-in;
+    -o-transition: opacity .5s ease-in;
+    -ms-transition: opacity .5s ease-in;
+    transition: opacity .5s ease-in;
+  }
+  .project-image {
+    position: relative;
+    height: 400px;
+    width: 100vw;
+    background-position: center top;
+    background-size: auto 100%;
+  }
+
+  .projects {
+    height: 100vh;
+    width: 100%;
+    top: 0px;
+    position: relative;
+  }
+  .project-grid a {
+    position: absolute;
+    top: calc(50% - 23px);
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: white;
+    color: black;
+  }
+}
+@media (min-width: 1201px) {
+  .project-grid {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 1;
+    -webkit-transition: opacity .5s ease-in;
+    -moz-transition: opacity .5s ease-in;
+    -o-transition: opacity .5s ease-in;
+    -ms-transition: opacity .5s ease-in;
+    transition: opacity .5s ease-in;
+  }
+  .project-image {
+    position: relative;
+    height: 100%;
+    width: 15%;
+    background-position: center top;
+    background-size: auto 100%;
+    -webkit-transition: width .25s ease-in;
+    -moz-transition: width .25s ease-in;
+    -o-transition: width .25s ease-in;
+    -ms-transition: width .25s ease-in;
+    transition: width .25s ease-in;
+  }
+  .project-image:first-of-type {
+    width: 40%;
+  }
+  .project-grid a {
+    position: absolute;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    bottom: 100px;
+    left: calc(50% - 91px);
+  }
+}
 .project-grid {
-  position: relative;
-  top: 0px;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  opacity: 1;
-  -webkit-transition: opacity .5s ease-in;
-  -moz-transition: opacity .5s ease-in;
-  -o-transition: opacity .5s ease-in;
-  -ms-transition: opacity .5s ease-in;
-  transition: opacity .5s ease-in;
+  min-width: 300px;
+  overflow: hidden;
 }
-.project-image {
-  position: relative;
-  height: 100%;
-  width: 22%;
-  background-position: center top;
-  background-size: auto 100%;
-  -webkit-transition: width .25s ease-in;
-  -moz-transition: width .25s ease-in;
-  -o-transition: width .25s ease-in;
-  -ms-transition: width .25s ease-in;
-  transition: width .25s ease-in;
+.puap-link {
+  width: 102px;
 }
-.project-image:first-of-type {
-  width: 34%;
-}
-/*.project-image:hover {
-  width: 33%;
-}*/
 .krgr-link {
-  background-image: url("../Assets/family.jpg");
+  width: 108px;
 }
 .otp-link {
-  background-image: url("../Assets/Jhin.jpg");
+  width: 91px;
 }
 .bth-link {
-  background-image: url("../Assets/basketballrainbow.jpg");
+  width: 92px;
 }
 .youchoose-link {
+  width: 171px;
+}
+.puap-container {
+  background-image: url("../Assets/family.jpg");
+}
+.krgr-container {
+  background-image: url("../Assets/family.jpg");
+}
+.otp-container {
+  background-image: url("../Assets/Jhin.jpg");
+}
+.bth-container {
+  background-image: url("../Assets/basketballrainbow.jpg");
+}
+.youchoose-container {
   background-image: url("../Assets/youChooseScreenshot.jpg");
 }
 .project-grid a {
@@ -49,195 +116,8 @@
   border-radius: 10px;
   font-size: 18px;
   font-weight: bold;
-  bottom: 100px;
-  left: calc(50% - 91px);
 }
 .project-grid a:hover {
   background: white;
   color: black;
-}
-.projects {
-  height: 400vh;
-  width: 100%;
-  top: 0px;
-  position: relative;
-}
-.krgr {
-  background:#bdcfdd;
-}
-.otp {
-  background:#bdcfdd;
-}
-.bth {
-  background:#bdcfdd;
-}
-.youchoose {
-  background:#bdcfdd;
-}
-.visually-hidden {
-  opacity: 0;
-}
-.hidden {
-  display: none;
-}
-.project {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  -webkit-transition: all .5s ease-in;
-  -moz-transition: all .5s ease-in;
-  -o-transition: all .5s ease-in;
-  -ms-transition: all .5s ease-in;
-  transition: all .5s ease-in;
-}
-.two-thirds-div {
-  width: 50%;
-  height: 66.6%;
-  display: inline-block;
-  position: relative;
-}
-.one-third-div {
-  padding: 50px 30px 20px 30px;
-  width: calc(50% - 60px);
-  height: calc(33.4% - 70px);
-  display: inline-block;
-  position: relative;
-  text-align: center;
-}
-.diamond-des {
-  font-size: 20px;
-  color: black;
-}
-.computer-screen {
-  width: 100%;
-  height: 100%;
-}
-.feature-pic {
-  position: absolute;
-  width: 70.8%;
-  height: 54%;
-  left: 15.3%;
-  top: 17.8%;
-}
-.quarter-div {
-  width: 50%;
-  height: 50%;
-  /*background: blue;*/
-  display: inline-block;
-  position: relative;
-}
-.quarter-div img {
-  width:  80%;
-  height: 80%;
-  top: 10%;
-  left: 10%;
-  position: absolute;
-  -webkit-transition: opacity .5s ease-in;
-  -moz-transition: opacity .5s ease-in;
-  -o-transition: opacity .5s ease-in;
-  -ms-transition: opacity .5s ease-in;
-  transition: opacity .5s ease-in;
-}
-.quarter-div span {
-  font-size: 24px;
-  color: white;
-  line-height: 125%;
-  width: 80%;
-}
-.slider {
-  position: absolute;
-  width: 70.8%;
-  height: 54%;
-  left: 15.3%;
-  top: 17.8%;
-}
-.slider img {
-  width: 100%;
-  height: 100%;
-}
-.krgr div {
-  float: right;
-}
-.krgr > img {
-  width: 50%;
-  height: 100%;
-  float: left;
-}
-.otp > img {
-  width: 50%;
-  height: 100%;
-  float: right;
-}
-.bth > img {
-  width: 50%;
-  height: 100%;
-  float: left;
-  /*margin-left: 10%;*/
-}
-.youchoose > img {
-  width: 50%;
-  height: 100%;
-  float: right;
-  display: inline-block;
-}
-.slideshow-button-cont {
-  position: absolute;
-  width: 105px;
-  height: 30px;
-  top: 66.6%;
-  /*border: 4px solid white;*/
-}
-.slideshow-button-cont:hover {
-  border-color: #e5e5e5;
-}
-.slideshow-button-cont-left {
-  left: calc(25% - 52px);
-}
-.slideshow-button-cont-right {
-  left: calc(75% - 52px);
-}
-.icon-circle {
-  width: 20px;
-  height: 20px;
-  top: 5px;
-  border-radius: 15px;
-  position: absolute;
-  background: white;
-}
-.icon-circle:hover {
-  background: #e5e5e5;
-}
-
-.krgr-tree {
-  left: 10px;
-}
-.krgr-albums {
-  left: calc(50% - 10px);
-}
-.krgr-books {
-  right: 10px;
-}
-.otp-animation {
-  left: 10px;
-}
-.otp-riotapi {
-  left: calc(50% - 10px);
-}
-.otp-thumbnails {
-  right: 10px;
-}
-.bth-neon {
-  left: 10px;
-}
-.bth-videos {
-  right: 10px;
-}
-.youchoose-dragging {
-  left: 10px;
-}
-.youchoose-search {
-  left: calc(50% - 10px);
-}
-.youchoose-customizability {
-  right: 10px;
 }

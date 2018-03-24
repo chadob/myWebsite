@@ -1,23 +1,89 @@
+@media (max-width: 456px) {
+  .scroll-wrap {
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .intro-wrapper {
+    text-align: center;
+    max-width: 90%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50px;
+  }
+  .intro-hi {
+    font-size: 96px;
+    line-height: 90%;
+    margin-bottom: 50px;
+  }
+  .intro {
+    font-size: 24px;
+  }
+}
+@media (min-width: 457px) and (max-width: 1200px) {
+  .scroll-wrap {
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 200px;
+  }
+  .intro-wrapper {
+    text-align: center;
+    max-width: 90%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 250px;
+  }
+  .intro-hi {
+    font-size: 96px;
+    line-height: 90%;
+    margin-bottom: 50px;
+  }
+  .intro {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1201px) {
+  .scroll-wrap {
+    top: calc(50% - 68px);
+    right: 30px;
+  }
+  .intro-wrapper {
+    top: 40%;
+    left: 10%;
+    max-width: 50%;
+  }
+  .intro {
+    font-size: 36px;
+  }
+  .intro-hi {
+    font-size: 96px;
+  }
+}
+
 .home {
   height: 100vh;
   width: 100%;
+  min-width: 300px;
 }
 .background {
   position: absolute;
   background-image: url("../Assets/profileTest.jpg");
   /*background: #1bd394;*/
   background-repeat: no-repeat;
-  background-position: top;
+  background-position-x: center;
+  background-position-y: top;
   background-size: cover;
-  min-width: 1000px;
   width: 100%;
+  min-width: 300px;
   height: 100vh;
 }
 .intro-wrapper {
   position: absolute;
-  top: 40%;
-  left: 10%;
-  max-width: 50%;
   opacity: 1;
   -webkit-transition: opacity .5s ease-in;
   -moz-transition: opacity .5s ease-in;
@@ -25,11 +91,7 @@
   -ms-transition: opacity .5s ease-in;
   transition: opacity .5s ease-in;
 }
-.intro-wrapper p:nth-of-type(2) {
-  font-size: 36px;
-}
-.intro-wrapper p:first-of-type {
-  font-size: 96px;
+.intro-hi {
   font-family: "adamcgpro";
 }
 .contact-intro {
@@ -63,8 +125,6 @@
 .scroll-wrap {
   width: 150px;
   text-align: center;
-  top: calc(50% - 68px);
-  right: 30px;
   position: absolute;
   -webkit-transition: opacity .5s ease-in;
   -moz-transition: opacity .5s ease-in;
