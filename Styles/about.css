@@ -1,4 +1,7 @@
 @media (max-width: 414px) {
+  .about {
+    min-height: 100%;
+  }
   .about-left {
     min-height: 100vh;
     height: 100%;
@@ -26,6 +29,9 @@
   }
 }
 @media (min-width: 415px) and (max-width: 1200px) {
+  .about {
+    height: 100%;
+  }
   .about-left {
     min-height: 100vh;
     height: 100%;
@@ -59,6 +65,7 @@
 @media (min-width: 1200px) {
   .about {
     display: flex;
+    height: 100%;
   }
   .about-left {
     position: relative;
@@ -97,7 +104,6 @@
   display: flex;
   justify-content: center;
   min-width: 300px;
-  height: 100%;
   width: 100%;
   background: #bdcfdd;
   bottom: 0px;
