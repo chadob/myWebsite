@@ -112,12 +112,15 @@
 .project-grid a {
   position: absolute;
   border: 2px solid white;
+  background: black;
+  color: white;
   padding: 10px 20px;
   border-radius: 10px;
   font-size: 18px;
   font-weight: bold;
 }
 .project-grid a:hover {
+  border-color: black;
   background: white;
   color: black;
 }
