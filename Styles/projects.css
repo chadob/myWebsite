@@ -79,6 +79,9 @@
   min-width: 300px;
   overflow: hidden;
 }
+.lpw-link {
+  width: 95px;
+}
 .puap-link {
   width: 102px;
 }
@@ -93,6 +96,9 @@
 }
 .youchoose-link {
   width: 171px;
+}
+.lpw-container {
+  background-image: url("../Assets/lpwScreenshot.jpg");
 }
 .puap-container {
   background-image: url("../Assets/puap.jpg");
