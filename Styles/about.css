@@ -105,13 +105,13 @@
   justify-content: center;
   min-width: 300px;
   width: 100%;
-  background: #bdcfdd;
+  background: #08080A;
   bottom: 0px;
   position: relative;
-  color: black;
+  color: white;
 }
 .about p {
-  color: black;
+  color: white;
   font-size: 20px;
 }
 

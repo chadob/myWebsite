@@ -11,6 +11,18 @@
     $('.covers').show();
     $('.other-pages-wrapper').hide();
   };
-
+  $(window).one('scroll', function () {
+    $('.intro').css('opacity', '1');
+  });
+  $('.background-info-button').click(function () {
+    console.log('hi')
+    $('.background-info').css('opacity', '1');
+  });
+  $('.info-background').click(function () {
+    $('.background-info').css('opacity', '0');
+  });
+  $('.info-exit').click(function () {
+    $('.background-info').css('opacity', '0');
+  });
   module.homeController = homeController;
 })(window);
