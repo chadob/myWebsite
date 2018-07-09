@@ -1,0 +1,39 @@
+.cheshire {
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  background: white;
+}
+.smile {
+
+}
+.vert-line {
+  height: 100px;
+  width: 5px;
+  background: black;
+  position: absolute;
+}
+.horiz-line {
+  position: absolute;
+}
+.upper-line {
+  width: 500px;
+  height: 100px;
+  border: solid 5px #000;
+  border-color: transparent transparent #000 transparent;
+  border-radius: 0 0 240px 50%/60px;
+}
+.middle-line {
+  width: 500px;
+  height: 100px;
+  border: solid 5px #000;
+  border-color: transparent transparent #000 transparent;
+  border-radius: 0 0 30px 30px;
+}
+.lower-line {
+  width: 500px;
+  height: 250px;
+  border: solid 5px #000;
+  border-color: transparent transparent #000 transparent;
+  border-radius: 250px 0 250px 0px;
+}
