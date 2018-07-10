@@ -117,7 +117,7 @@
   color: white;
 }
 .info-text {
-  padding: 10px;
+  padding: 20px;
   position: absolute;
   top: calc(50% - 100px);
   left: calc(50% - 175px);
@@ -129,10 +129,11 @@
   text-align: center;
 }
 .info-text p {
-  font-size: 18px;
+  font-size: 16px;
 }
 .info-exit {
   text-align: right;
+  margin-bottom: 20px;
 
 }
 .info-exit a {
@@ -142,8 +143,8 @@
 .info-exit a:hover {
 }
 .info-text-text a {
-  color: black;
-  font-size: 18px;
+  color: blue;
+  font-size: 12px;
   text-decoration: underline;
 }
 .info-text a:hover {
@@ -152,6 +153,7 @@
 }
 .background-info {
   opacity: 0;
+  display: none;
 }
 .background-info-button {
   width: 50px;
