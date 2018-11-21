@@ -78,6 +78,10 @@
 .project-grid {
   min-width: 300px;
   overflow: hidden;
+  background: black;
+}
+.bh-link {
+  width: 95px;
 }
 .lpw-link {
   width: 95px;
@@ -96,6 +100,9 @@
 }
 .youchoose-link {
   width: 171px;
+}
+.bh-container {
+  background-image: url("../Assets/bhScreenshot.jpg");
 }
 .lpw-container {
   background-image: url("../Assets/lpwScreenshot.jpg");
